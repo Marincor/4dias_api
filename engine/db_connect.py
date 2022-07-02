@@ -23,5 +23,15 @@ def find_company_by_name(company_name:str):
         data = conn.execute(query,values)
         conn.close()
         return data.fetchone()
+    
+
+def approve_company_by_name(company_name:str, approved: bool):
+    finded_company = find_company_by_name(company_name)
+    if finded_company:
+        with engine.connect() as conn:
+            query = """ UPDATE companies SET approved = %s WHERE company_name = %s """
+            values = (approved, company_name)
+            conn.execute(query,values)
+            conn.close()
         
         

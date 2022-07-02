@@ -1,12 +1,20 @@
 import os
+from dotenv import load_dotenv
 from flask import Flask
 from sqlalchemy import text
 from resources.main import main
 from resources.companies import companies, company
 from engine.db_connect import engine
+from flask_jwt_extended import JWTManager
 
+load_dotenv()
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder="./helpers/templates")
+app.config["JWT_SECRET_KEY"] = os.getenv("JWT_SECRET_KEY")
+app.config['JWT_TOKEN_LOCATION'] = ['query_string']
+app.config["JWT_ALGORITHM"] = "HS256"
+jwt = JWTManager(app)
+
 app.register_blueprint(main, url_prefix="/")
 app.register_blueprint(companies, url_prefix="/companies")
 app.register_blueprint(company, url_prefix="/company")
