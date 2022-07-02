@@ -11,6 +11,14 @@ app.register_blueprint(main, url_prefix="/")
 app.register_blueprint(companies, url_prefix="/companies")
 app.register_blueprint(company, url_prefix="/company")
 
+
+@app.after_request
+def add_header(response):
+    response.headers['Access-Control-Allow-Methods'] = 'OPTIONS,GET,POST'
+    response.headers['Access-Control-Allow-Headers'] = '*' 
+    response.headers['Access-Control-Allow-Origin'] = '*' 
+    return response
+
 @app.before_first_request
 def connect_db():
      with engine.connect() as conn:

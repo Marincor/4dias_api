@@ -9,3 +9,19 @@ DATABASE_MIGRATION_URL= os.getenv("DATABASE_MIGRATION_URL")
 
 engine = create_engine(f'postgresql+psycopg2://{DATABASE_MIGRATION_URL}', client_encoding='utf8', implicit_returning=True)
 
+def register_new_company(company_name:str, web_site: str, source:str, approved: bool):
+    with engine.connect() as conn:
+        query = """ INSERT INTO companies (company_name, web_site, source, approved) VALUES (%s,%s,%s,%s)"""
+        values = (company_name, web_site, source, approved)
+        conn.execute(query,values)
+        conn.close()
+     
+def find_company_by_name(company_name:str):
+    with engine.connect() as conn:
+        query = """ SELECT * FROM companies WHERE company_name = %s """
+        values = (company_name)
+        data = conn.execute(query,values)
+        conn.close()
+        return data.fetchone()
+        
+        
