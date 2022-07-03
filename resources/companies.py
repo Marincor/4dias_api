@@ -1,5 +1,5 @@
 
-from flask import Blueprint, jsonify, request
+from flask import Blueprint, jsonify, make_response, render_template, request
 from flask_jwt_extended import create_access_token, jwt_required
 from engine.db_connect import find_company_by_name, register_new_company, approve_company_by_name
 from helpers.errors import errors
@@ -72,6 +72,6 @@ def approve_register():
             approve_company_by_name(company_name, approved)
         except:
             return errors["server_error"]    
-        return {'message': 'Company approved'}, 200
+        return make_response(render_template("approved_message.html")), 200
     
     return errors["server_error"] 
