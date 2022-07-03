@@ -33,3 +33,13 @@ def approve_email_html(company_name:str, link: str):
   </body>
 </html>
     """.format(company_name, link)
+    
+    
+def dict_to_json_company(raw_company):
+  company =  {
+        "id": raw_company['id'],
+        "company_name": raw_company['company_name'],
+        "web_site": raw_company['web_site'],
+        "source": raw_company['source']
+    }
+  return company

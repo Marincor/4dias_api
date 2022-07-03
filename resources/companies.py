@@ -1,16 +1,32 @@
 
+import json
 from flask import Blueprint, jsonify, make_response, render_template, request
 from flask_jwt_extended import create_access_token, jwt_required
-from engine.db_connect import find_company_by_name, register_new_company, approve_company_by_name
+from engine.db_connect import find_company_by_id, find_company_by_name, list_companies, register_new_company, approve_company_by_name
 from helpers.errors import errors
 from helpers.mailgun import send_approve_email
+from helpers.utils import dict_to_json_company
 
 companies = Blueprint('companies', __name__);
 company = Blueprint('company', __name__)
 
 @companies.route("", methods=["GET"])
 def list():
-    return {'message': 'list of companies []'}, 200
+    companies = list_companies()
+    
+    return jsonify({'result': [dict(row) for row in companies]}), 200
+
+
+@company.route("/<id>", methods=["GET"])
+def show_company_by_id(id):
+    try:
+        finded_company = find_company_by_id(id)
+    except:
+        return errors["server_error"]    
+    if finded_company:
+        company = dict_to_json_company(finded_company)
+        return {'result': company}, 200
+    return errors["company_not_found"] 
 
 
 @company.route("", methods=["POST"])
@@ -27,7 +43,7 @@ def register_company():
     approved = False
     
     if 'web_site' in data:
-        web_site = 'web_site'
+        web_site = data['web_site']
     if 'source' in data:
         source = data['source']  
      
@@ -52,6 +68,7 @@ def register_company():
     except:
         return errors["server_error"]      
     return {'message': 'company successfully created!' }, 201
+
 
 @company.route("/approve-register",methods=["GET"])
 @jwt_required()

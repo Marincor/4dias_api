@@ -35,3 +35,19 @@ def approve_company_by_name(company_name:str, approved: bool):
             conn.close()
         
         
+def list_companies():
+    with engine.connect() as conn:
+        query = """ SELECT * FROM companies """
+        data = conn.execute(query)
+        conn.close()
+        return data.fetchall()
+ 
+
+def find_company_by_id(id:str):
+    with engine.connect() as conn:
+        query = """ SELECT * FROM companies WHERE id = %s """
+        values = (id)
+        data = conn.execute(query,values)
+        conn.close()
+        return data.fetchone() 
+    
