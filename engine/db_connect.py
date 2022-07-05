@@ -7,6 +7,10 @@ load_dotenv()
 
 DATABASE_URL= os.getenv("DATABASE_URL")
 
+# sqlalchemy required config
+if "postgres://" in DATABASE_URL:
+  DATABASE_URL = DATABASE_URL.replace("://", "ql://", 1)
+
 engine = create_engine(f'{DATABASE_URL}', client_encoding='utf8', implicit_returning=True)
 
 def register_new_company(company_name:str, web_site: str, source:str, approved: bool):
