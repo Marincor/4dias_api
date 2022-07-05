@@ -5,9 +5,9 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-DATABASE_MIGRATION_URL= os.getenv("DATABASE_MIGRATION_URL")
+DATABASE_URL= os.getenv("DATABASE_URL")
 
-engine = create_engine(f'postgresql+psycopg2://{DATABASE_MIGRATION_URL}', client_encoding='utf8', implicit_returning=True)
+engine = create_engine(f'{DATABASE_URL}', client_encoding='utf8', implicit_returning=True)
 
 def register_new_company(company_name:str, web_site: str, source:str, approved: bool):
     with engine.connect() as conn:
