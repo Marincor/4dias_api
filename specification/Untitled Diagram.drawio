@@ -1,1 +1,75 @@
-<mxfile host="app.diagrams.net" modified="2022-07-09T12:58:57.907Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36" version="20.0.4" etag="Al7jollnM691dXGlrPZm" type="github"><diagram id="yezn9lv_8U38S4_ol9oX">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2022-07-09T13:28:02.591Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36" etag="CPm8-gbuuyOax4Q1ny8-" version="20.0.4" type="github">
+  <diagram id="yezn9lv_8U38S4_ol9oX" name="Page-1">
+    <mxGraphModel dx="1021" dy="520" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="8NmKRbJ38vvldy6Dzvw--1" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="90" y="270" width="150" height="400" as="geometry" />
+        </mxCell>
+        <mxCell id="8NmKRbJ38vvldy6Dzvw--2" value="Client" style="html=1;shadow=0;dashed=0;shape=mxgraph.bootstrap.rrect;rSize=5;strokeColor=none;strokeWidth=1;fillColor=none;fontColor=#6C767D;whiteSpace=wrap;align=left;verticalAlign=middle;spacingLeft=10;fontSize=14;spacing=10;" vertex="1" parent="1">
+          <mxGeometry x="90" y="280" width="70" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="8NmKRbJ38vvldy6Dzvw--3" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="260" y="270" width="720" height="400" as="geometry" />
+        </mxCell>
+        <mxCell id="8NmKRbJ38vvldy6Dzvw--6" value="&amp;nbsp; &amp;nbsp; List companies flow" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#6a00ff;strokeColor=#3700CC;fontColor=#ffffff;align=left;" vertex="1" parent="1">
+          <mxGeometry x="90" y="210" width="890" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="8NmKRbJ38vvldy6Dzvw--9" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="290" y="270" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="8NmKRbJ38vvldy6Dzvw--10" value="" style="group" vertex="1" connectable="0" parent="8NmKRbJ38vvldy6Dzvw--9">
+          <mxGeometry x="-10" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="8NmKRbJ38vvldy6Dzvw--7" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn4.iconfinder.com/data/icons/scripting-and-programming-languages/512/660277-Python_logo-128.png;fontColor=#999999;fillColor=none;" vertex="1" parent="8NmKRbJ38vvldy6Dzvw--10">
+          <mxGeometry x="30" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="8NmKRbJ38vvldy6Dzvw--8" value="Flask - API" style="html=1;shadow=0;dashed=0;shape=mxgraph.bootstrap.rrect;rSize=5;strokeColor=none;strokeWidth=1;fillColor=none;fontColor=#6C767D;whiteSpace=wrap;align=left;verticalAlign=middle;spacingLeft=10;fontSize=14;spacing=10;" vertex="1" parent="8NmKRbJ38vvldy6Dzvw--10">
+          <mxGeometry y="30" width="110" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="8NmKRbJ38vvldy6Dzvw--19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.044;entryY=0.483;entryDx=0;entryDy=0;entryPerimeter=0;fontColor=#999999;" edge="1" parent="1" source="8NmKRbJ38vvldy6Dzvw--14" target="8NmKRbJ38vvldy6Dzvw--18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8NmKRbJ38vvldy6Dzvw--14" value="" style="shape=mxgraph.cisco.computers_and_peripherals.web_browser;html=1;pointerEvents=1;dashed=0;fillColor=#036897;strokeColor=#ffffff;strokeWidth=2;verticalLabelPosition=bottom;verticalAlign=top;align=center;outlineConnect=0;fontColor=#999999;" vertex="1" parent="1">
+          <mxGeometry x="120" y="390" width="62" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="8NmKRbJ38vvldy6Dzvw--21" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="280" y="398" width="130" height="68" as="geometry" />
+        </mxCell>
+        <mxCell id="8NmKRbJ38vvldy6Dzvw--18" value="" style="sketch=0;html=1;dashed=0;whitespace=wrap;fillColor=#2875E2;strokeColor=#ffffff;points=[[0.005,0.63,0],[0.1,0.2,0],[0.9,0.2,0],[0.5,0,0],[0.995,0.63,0],[0.72,0.99,0],[0.5,1,0],[0.28,0.99,0]];shape=mxgraph.kubernetes.icon;prIcon=api;fontColor=#999999;" vertex="1" parent="8NmKRbJ38vvldy6Dzvw--21">
+          <mxGeometry x="30" width="50" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="8NmKRbJ38vvldy6Dzvw--20" value="API - Engine" style="html=1;shadow=0;dashed=0;shape=mxgraph.bootstrap.rrect;rSize=5;strokeColor=none;strokeWidth=1;fillColor=none;fontColor=#6C767D;whiteSpace=wrap;align=left;verticalAlign=middle;spacingLeft=10;fontSize=14;spacing=10;" vertex="1" parent="8NmKRbJ38vvldy6Dzvw--21">
+          <mxGeometry y="48" width="130" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="8NmKRbJ38vvldy6Dzvw--24" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="540" y="390" width="90" height="84" as="geometry" />
+        </mxCell>
+        <mxCell id="8NmKRbJ38vvldy6Dzvw--22" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn3.iconfinder.com/data/icons/animals-105/150/icon_animal_elefante-128.png;fontColor=#999999;fillColor=none;" vertex="1" parent="8NmKRbJ38vvldy6Dzvw--24">
+          <mxGeometry x="20" width="70" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="8NmKRbJ38vvldy6Dzvw--23" value="&lt;font color=&quot;#ffff00&quot;&gt;PostgreSQL&lt;/font&gt;" style="html=1;shadow=0;dashed=0;shape=mxgraph.bootstrap.rrect;rSize=5;strokeColor=none;strokeWidth=1;fillColor=none;fontColor=#6C767D;whiteSpace=wrap;align=left;verticalAlign=middle;spacingLeft=10;fontSize=14;spacing=10;fontStyle=1" vertex="1" parent="8NmKRbJ38vvldy6Dzvw--24">
+          <mxGeometry y="64" width="70" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="8NmKRbJ38vvldy6Dzvw--27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.75;entryDx=0;entryDy=0;fontColor=#FFFF00;" edge="1" parent="1" source="8NmKRbJ38vvldy6Dzvw--18" target="8NmKRbJ38vvldy6Dzvw--22">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="410" y="422" />
+              <mxPoint x="410" y="443" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8NmKRbJ38vvldy6Dzvw--30" value="" style="sketch=0;html=1;aspect=fixed;strokeColor=none;shadow=0;align=center;verticalAlign=top;fillColor=#3B8DF1;shape=mxgraph.gcp2.view_list;fontColor=#FFFF00;" vertex="1" parent="1">
+          <mxGeometry x="800" y="398" width="46.98" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="8NmKRbJ38vvldy6Dzvw--31" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.041;entryY=0.496;entryDx=0;entryDy=0;entryPerimeter=0;fontColor=#FFFF00;" edge="1" parent="1" source="8NmKRbJ38vvldy6Dzvw--22" target="8NmKRbJ38vvldy6Dzvw--30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8NmKRbJ38vvldy6Dzvw--32" value="Companies List" style="html=1;shadow=0;dashed=0;shape=mxgraph.bootstrap.rrect;rSize=5;strokeColor=none;strokeWidth=1;fillColor=none;fontColor=#6C767D;whiteSpace=wrap;align=left;verticalAlign=middle;spacingLeft=10;fontSize=14;spacing=10;" vertex="1" parent="1">
+          <mxGeometry x="753.49" y="450" width="140" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
