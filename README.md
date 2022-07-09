@@ -4,7 +4,7 @@
 > you can see the front repo <a href="https://github.com/Marincor/4dias" target="_blank">here</a>
 
 # 🛈 About
-This API is part of a open source project called '4 dias', created by Marincor with the proporse to be a aggregator of the brazilian companies that joined to the way of work of 4 days of work per week.
+This API is part of an open-source project called '4 dias', created by Marincor with the purpose of being an aggregator of the brazilian companies that joined to the way of work of 4 days of work per week.
 
 # 🗎 Request guide
  - <a href="https://app.swaggerhub.com/apis-docs/GABRIELCMUNIVOS/4_days/1.0.0#/" target="_blank">Swagger</a> 
