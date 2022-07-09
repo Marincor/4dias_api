@@ -21,7 +21,7 @@ This API is part of a open source project called '4 dias', created by Marincor w
 
 # ⚙ Technologies
 
-<img alt="py" src="https://cdn.worldvectorlogo.com/logos/python-4.svg" width="100px" />   <img alt="flask" src="https://cdn.worldvectorlogo.com/logos/flask.svg" width="100px" />    <img alt="postgresql" src="https://cdn.worldvectorlogo.com/logos/postgresql.svg" width="100px" />
+<img alt="py" title="Python" src="https://cdn.worldvectorlogo.com/logos/python-4.svg" width="100px" />   <img title="Flask" alt="flask" src="https://cdn.worldvectorlogo.com/logos/flask.svg" width="100px" />    <img title="PostgreSQL" alt="postgresql" src="https://cdn.worldvectorlogo.com/logos/postgresql.svg" width="100px" />
 
 
 
