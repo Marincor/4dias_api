@@ -10,6 +10,7 @@ This API is part of an open-source project called '4 dias', created by Marincor 
  - <a href="https://app.swaggerhub.com/apis-docs/GABRIELCMUNIVOS/4_days/1.0.0#/" target="_blank">Swagger</a> 
  - <a href="https://raw.githubusercontent.com/Marincor/4dias_api/main/specification/collection_4days_insomnia.json" target="_blank" >Collection</a> 
  
+
  # ⤳ Flow
  
  >  ![image](https://user-images.githubusercontent.com/84210050/178109959-8cde7fe2-2878-414d-914a-09caf02c6cad.png)
