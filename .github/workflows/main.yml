@@ -19,20 +19,43 @@ jobs:
   build:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version: [12.x, 14.x, 16.x]
-        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
+    container: node:latest
+    services:
+      # label used to access the service container
+      postgres:
+        # Docker Hub image
+        image: postgres:latest
+        # service environment variables
+        # `POSTGRES_HOST` is `postgres`
+        env:
+          # optional (defaults to `postgres`)
+          POSTGRES_DB: postgres_db
+          # required
+          POSTGRES_PASSWORD: postgres_password_mock
+          # optional (defaults to `5432`)
+          POSTGRES_PORT: 5432
+          # optional (defaults to `postgres`)
+          POSTGRES_USER: postgres_user_mock
+        ports:
+          # maps tcp port 5432 on service container to the host
+          - 5432:5432
     steps:
     # Setup do Job
-    - uses: actions/checkout@v2
-    - name: Use Node.js ${{ matrix.node-version }}
+    - uses: actions/checkout@v3
+    - name: actions/setup-python@v4
       uses: actions/setup-node@v2
       with:
-        node-version: ${{ matrix.node-version }}
+        python-version: '3.10'
     # ./Setup do Job
     - run: | 
+       apt-get update -y 
+       apt-get install -y python3-venv
        python3 -m venv .venv
-       source .venv/bin/activate
+    - run: |    
+       . .venv/bin/activate
+       apt install sudo -y
+       sudo apt install python3-dev -y
        pip install -r requirements.txt
+       export DATABASE_URL=postgresql+psycopg2://postgres_user_mock:postgres_password_mock@postgres/postgres_db
+       export JWT_SECRET_KEY=jwt_mock4035
        pytest
