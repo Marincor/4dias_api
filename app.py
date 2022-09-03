@@ -33,3 +33,4 @@ def connect_db():
         with open("./migrations/companies.sql") as file:
             query = text(file.read())
             conn.execute(query) 
+            conn.close()            
